@@ -13,7 +13,7 @@ freezing(F) :-
     F =< 32.
 
 
-Pract 2:
+Pract 2: 8 queen prob
 
 % Pract2:render solutions nicely.
 :- use_rendering(chess).
@@ -56,7 +56,7 @@ queens([C|Cs], Row0, [Col|Solution]) :-
 */
 
 
-Pract3:
+Pract3: DFS
 % 3:Updated graph representation with adjacency information
 edge(a, b).
 edge(a, c).
@@ -85,7 +85,7 @@ dfs(_, Visited, Visited).
 
 
 
-Pract4:
+Pract4: BFS
 
 % 4:Graph representation with heuristic values
 edge(a, b, 2).
@@ -126,7 +126,7 @@ Pract5:
 
 YOU Do
 
-Pract 6:
+Pract 6: robot movement
 % Initial state of the robot and obstacles
 at(robot, position(0, 0)).
 at(obstacle1, position(1, 0)).
@@ -204,7 +204,7 @@ execute_action(drop) :-
 % Example usage:
 % Call: solve.
 
-Pract 7:
+Pract 7: travelling salesman
 
 % 7:Cities and distances between them
 distance(city1, city2, 10).
@@ -230,7 +230,7 @@ valid_tour([City1, City2 | Rest], TotalDistance) :-
 
 
 
-Pract 8:
+Pract 8: 
 % Pract8 : Medical imaging data representation
 % For simplicity, using a list of features representing imaging data
 % Each feature is a pixel value or a feature extracted from the image
